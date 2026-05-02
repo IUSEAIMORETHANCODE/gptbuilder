@@ -1,0 +1,18 @@
+# GPT Builder Configuration
+openrouter:
+  api-key: "your-openrouter-api-key-here"
+  model: "openrouter/auto"
+  base-url: "https://api.openrouter.ai/v1"
+
+building:
+  timeout-seconds: 60
+  max-blocks-per-build: 5000
+  animation-enabled: true
+  animation-speed: 20
+
+messages:
+  building-started: "&6[GPT] Building started... This may take a moment."
+  building-complete: "&a[GPT] Building complete!"
+  building-error: "&c[GPT] Error during building: {error}"
+  invalid-prompt: "&c[GPT] Please provide a prompt. Usage: /gpt <prompt>"
+  no-permission: "&c[GPT] You don't have permission to use this command."

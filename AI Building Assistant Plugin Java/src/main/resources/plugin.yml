@@ -1,0 +1,20 @@
+name: GPTBuilder
+version: 1.0
+description: A Minecraft building assistant powered by OpenRouter AI
+author: GPTBuilder
+main: com.gptbuilder.plugin.GPTBuilderPlugin
+
+commands:
+  gpt:
+    description: Send a prompt to GPT for building assistance
+    usage: /gpt <prompt>
+    permission: gptbuilder.use
+    aliases: [ai, build]
+
+permissions:
+  gptbuilder.use:
+    description: Allows player to use the /gpt command
+    default: true
+  gptbuilder.admin:
+    description: Allows admin access to GPT Builder
+    default: op
